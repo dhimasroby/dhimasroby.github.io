@@ -497,9 +497,19 @@
         applyTheme(currentTheme);
       });
 
+      // ===== Page fade-in effect =====
+      function initPageFadeIn() {
+        const container = document.querySelector('.container');
+        // Small delay to ensure smooth animation
+        setTimeout(() => {
+          container.classList.add('loaded');
+        }, 100);
+      }
+
       // Init
       renderPromptGroups();
       welcome();
+      initPageFadeIn();
     </script>
   </body>
   </html>

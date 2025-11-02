@@ -26,7 +26,10 @@
     --pill: #f1f5f9;
   }
 }
-* { box-sizing: border-box; }
+* { 
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
 html, body { height: 100%; }
 body {
   margin: 0;
@@ -40,6 +43,7 @@ body {
   background-position: center center, 20% -10%, 110% 10%;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: cover, auto, auto;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 /* Pastikan teks tombol mengikuti warna tema */
 button { color: var(--text); }
@@ -52,6 +56,14 @@ a:hover { text-decoration: underline; }
   min-height: 100vh;
   display: grid;
   grid-template-rows: auto auto auto;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.container.loaded {
+  opacity: 1;
+  transform: translateY(0);
 }
 header {
   display: grid;
@@ -111,7 +123,7 @@ header {
 
 /* Smartphone */
 @media (max-width: 480px) {
-  .container { padding: 16px 12px 24px; }
+  .container { padding: 24px 12px 24px; }
   .hero { padding: 12px; margin-top: 16px; }
   .footer { margin-top: 24px; padding: 16px 0; }
   .footer-content { 
