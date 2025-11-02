@@ -1,12 +1,70 @@
-# People Call Me Dhimas
-Welcome to my Github Repository!
-My Personal Library & Documentation of my Project.
+# Dhimas Roby — CTO | Programmer
 
-------------
+Portal pribadi berbasis chatbot dengan prompt terkurasi untuk mengenal identitas, karier, keahlian, dan portofolio saya.
 
-**About Me :**
-> Loves Everything About Technology.
-My Experience And Passion On It Was From The Beginning Of Windows Put Their Start Menu Button, But My English Still Worst in The Classroom. 
-I Can Be A Flexible And Professional Man at The Same Time.
+## 🚀 Fitur Utama
 
-> On 2020, Pandemic makes me learn about Augmented Reality specifically for Instagram Effect. Contact me if you want to hire me, or maybe someday you need me.
+- **Chat Interface**: Antarmuka chat dengan typewriter effect yang smooth
+- **Prompt Terkurasi**: Pertanyaan siap pakai tentang profil, karier, keahlian, dan portofolio
+- **Dark/Light Mode**: Toggle tema otomatis dengan deteksi preferensi sistem
+- **Responsive Design**: Optimal di desktop, tablet, dan mobile
+- **Copy & Clear**: Salin percakapan atau bersihkan chat dengan mudah
+- **GitHub Pages Ready**: Fully static, tanpa server-side processing
+
+## 📋 Kategori Prompt
+
+### 🧑‍💼 **Profil**
+- Perkenalan singkat
+- Nilai kerja & prinsip
+
+### 🚀 **Karier** 
+- Perjalanan karier
+- Peran sebagai CTO
+
+### 💻 **Keahlian**
+- Stack teknologi
+- Arsitektur & praktik
+
+### 🎯 **Portofolio**
+- Sorotan proyek
+- Dampak & metrik
+
+### 📞 **Kontak**
+- Cara menghubungi
+- Ringkasan CV
+
+## 🛠️ Teknologi
+
+- **Frontend**: Vanilla HTML, CSS, JavaScript
+- **Styling**: CSS Grid, Flexbox, CSS Variables
+- **Deployment**: GitHub Pages
+- **Compatibility**: Modern browsers, HTTPS/HTTP fallback
+
+## 🎨 Kustomisasi
+
+Untuk mengubah prompt atau konten, edit variabel `PROMPTS` di file `index.html`:
+
+```javascript
+const PROMPTS = [
+  {
+    group: "Kategori",
+    items: [
+      {
+        id: "unique-id",
+        label: "Label Tombol",
+        answer: "Jawaban yang akan ditampilkan"
+      }
+    ]
+  }
+];
+```
+
+## 📱 Kontak
+
+- **Email**: dhimasroby@outlook.com
+- **LinkedIn**: [linkedin.com/in/dhimasroby](https://www.linkedin.com/in/dhimasroby)
+- **GitHub**: [github.com/dhimasroby](https://github.com/dhimasroby)
+
+---
+
+*Dibangun dengan ❤️ untuk GitHub Pages*
